@@ -1,2 +1,6 @@
-# style-guides
-Style guides for mindbox developers.
+# Style Guides
+
+В репозитории собраны стайл-гайды для разработчиков Mindbox.
+
+### [C#](/c-sharp.md)
+### [TypeScript](/TypeScript.md)
