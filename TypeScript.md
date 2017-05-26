@@ -3,7 +3,7 @@
 ### Форматирование
 Для отступов используем табуляцию.
 Для фигурных скобок испольузем K&R стиль:
-```
+```typescript
 interface Foo {
     bar: string;
 }
@@ -28,8 +28,8 @@ interface Foo {
 ##### Средний вариант
 - MyComponent - контейнер
 - MyComponentPresenter - презентер
-- MyComponentReducer - Reducer, Action Creators
-- MyComponentActions - Actions
+- MyComponentReducer - Reducer
+- MyComponentActions - Actions, Action Creators
 ##### Максимальный вариант
 - MyComponent - контейнер
 - MyComponentPresenter - презентер
@@ -39,14 +39,16 @@ interface Foo {
 
 ### Папки
 Группируем файлы по папкам соответственно функционалу, а не архитектурным срезам. Пример:
-- Operation
-  - OperationSteps
-    - AddOrEditOperationStep
-		-	AddOrEditOperationStep.ts
-		-	AddOrEditOperationStepPresenter.tsx
-		-	AddOrEditOperationStepReducer.ts
-	-	SendEmailOperationStep
-        - …
-    - OutptutWriters
-	    - CustomerOutputWriter
-	    	- ...
+```
+Operation
+    OperationSteps
+        AddOrEditOperationStep
+            AddOrEditOperationStep.ts
+            AddOrEditOperationStepPresenter.tsx
+            AddOrEditOperationStepReducer.ts
+        SendEmailOperationStep
+            <files>
+    OutptutWriters
+        CustomerOutputWriter
+            <files>
+ ```
